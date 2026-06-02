@@ -11,6 +11,8 @@ An interactive **WebGL voxel art installation** built with **Three.js**, featuri
 
 ---
 
+![Soul Sanctuary 演示](soul_sanctuary.gif)
+
 ![France Station](screenshot-france.png)
 ![Iceland Station](screenshot-iceland.png)
 
