@@ -5,42 +5,55 @@
 [![Pixel Art](https://img.shields.io/badge/Style-Voxel%20Pixel%20Art-ff69b4?style=for-the-badge)](https://en.wikipedia.org/wiki/Voxel)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-An interactive **WebGL voxel art installation** built with **Three.js**, featuring **12 procedurally generated spiritual retreats** from around the world. Each station is a self-contained diorama with unique architecture, atmospheric particle systems, and dynamic lighting — all rendered in crisp low-resolution pixel art style.
+An interactive **WebGL voxel art installation** built with **Three.js**, featuring **12 procedurally generated emotional havens** with cultural influences from around the world. Each station is a self-contained floating diorama with detailed architecture, gardens, atmospheric particles, and living light — all rendered in crisp low-resolution pixel art style.
 
 > *"Stop the mental churn. Let the cherry blossoms fall. Let the aurora dance. Let the snow bury the deadlines."*
 
 ---
 
-![Soul Sanctuary 演示](soul_sanctuary.gif)
+![樱夜鸟居 — Sakura Afterglow](screenshots/sakura.png)
 
-![France Station](screenshot-france.png)
-![Iceland Station](screenshot-iceland.png)
+![Twelve quiet islands](screenshots/art-overview.jpg)
+
+![灵魂图鉴 — The Quiet Atlas](screenshots/atlas.png)
+
+### Art Refresh
+- **A softer world**: destination-specific dusk gradients, a restrained star field, warm/cool light separation, sRGB color calibration, ACES tone mapping, and soft shadows.
+- **Islands with depth**: tiered, chamfered voxel rock masses, irregular hanging stone, and gently floating satellite rocks.
+- **Places to linger**: blossoming trees, garden bridges, koi, lotus ponds, café windows and flowers, snow-capped roofs, a stepped pyramid and palm oasis.
+- **Living water and sky**: teal water, breathing ripples, hot-spring steam, and an animated translucent aurora ribbon.
+- **A quiet interface**: poetic bilingual haven names, a collapsible 12-destination atlas with original line-art emblems, minimal travel controls, and responsive layouts.
+- **Thoughtful motion**: slower 20-second journeys, working mouse/touch orbit, keyboard navigation, and reduced-motion support.
+
+See [Art Direction](ART_DIRECTION.md) for the visual reference principles and per-destination details. Everything remains procedurally drawn; no third-party game models, textures, screenshots, or logos are used.
 
 ## ✨ Features
 
 ### 🌍 12 Global Spiritual Retreats
-Travel through **12 handcrafted voxel destinations**, each capturing the essence of a country's iconic atmosphere:
+Travel through **12 handcrafted voxel destinations**, each capturing an atmosphere rather than a tourism checklist:
 
 | Station | Country | Landmark | Particle System | Mood |
 |:---|:---|:---|:---|:---|
-| 🌸 Kyoto Twilight | Japan | Torii Gate & Sakura Tree | Falling Petals | Zen, ephemeral |
-| 🎋 Bamboo Fireflies | China | Pavilion & Bamboo Grove | Floating Fireflies | Meditative, ancient |
-| 🌵 Route 66 Dusk | USA | Neon Motel & Pickup Truck | Desert Dust Storms | Retro, rebellious |
-| ☎️ Thames Rain | UK | Red Phone Booth & Street Lamp | London Downpour | Melancholic, cozy |
-| 🍷 Left Bank Dusk | France | Café & Iron Lamp | Spinning Autumn Leaves | Romantic, wistful |
-| 🏔️ Black Forest Night | Germany | Fachwerkhaus & Pine Trees | Steady Snowfall | Orderly, warm |
-| 🛶 Venetian Drift | Italy | Gondola & Mooring Poles | Water Sparkles | Lazy, sensual |
-| 🔥 Nyhavn Hearth | Denmark | Colorful Townhouses & Sailboat | Rising Smoke | Hygge, intimate |
-| 🌌 World's End | Iceland | Black Church & Basalt Columns | Aurora Borealis | Solitary, sublime |
-| 🪷 River Lanterns | Thailand | Stilt House & Golden Chedi | Floating Krathongs | Spiritual, flowing |
-| 🔺 Valley of Kings | Egypt | Step Pyramid & Oasis | Desert Sand Drift | Timeless, monumental |
-| 🌀 Aegean Windmill | Greece | Santorini Mill & Pergola | Sea Breeze Floaters | Bright, liberating |
+| 🌸 樱夜鸟居 / Sakura Afterglow | Japan | Torii, layered sakura, koi pond & bench | Falling Petals | Tender, ephemeral |
+| 🎋 翠竹流萤 / Bamboo Moon Garden | China | Pavilion, bamboo, curved garden bridge & lotus | Floating Fireflies | Meditative, ancient |
+| 🌵 霓虹公路 / The Last Neon Motel | USA | Neon motel, road markings & pickup truck | Desert Dust | Retro, restful |
+| ☎️ 雨灯长街 / A Little Shelter from Rain | UK | Phone booth, masonry, windows & rain puddles | Rain | Melancholic, cozy |
+| 🍷 左岸来信 / Letters from the Left Bank | France | Café, striped awning, flower boxes & coffee | Autumn Leaves | Romantic, wistful |
+| 🏔️ 雪松炉火 / Where the Hearth Is | Germany | Snow-capped timber house, pines & stacked firewood | Snow | Sheltered, warm |
+| 🛶 暮色水巷 / Drifting into Evening | Italy | Gondola, arched stepped bridge & canal façades | Water Sparkles | Unhurried, intimate |
+| 🔥 风灯港湾 / Harbor of Small Joys | Denmark | Colorful townhouses, quay & stepped sail | Chimney Embers | Hygge, intimate |
+| 🌌 极光来临 / Under a Wandering Sky | Iceland | Dark church, basalt, aurora ribbon & hot spring | Aurora & Steam | Solitary, sublime |
+| 🪷 莲灯水庭 / Wishes on the Water | Thailand | Stilt house, golden chedi, timber pier & lotus | Floating Lanterns | Spiritual, flowing |
+| 🔺 沙海星眠 / A Thousand Quiet Years | Egypt | Ten-tier pyramid, palms, oasis & small shelter | Sand Drift | Timeless, restful |
+| 🌀 蓝风白屿 / The Sea Can Wait | Greece | Centered windmill, white terraces & vine pergola | Sea Breeze | Bright, liberating |
 
 ### 🎮 Interactive Controls
-- **Auto-Cruise Mode**: Automatically transitions between stations every 10 seconds
-- **Manual Navigation**: `PREV` / `NEXT` buttons for deliberate exploration
-- **CRUISE Toggle**: Pause the journey to linger in your favorite sanctuary
-- **Mouse Drag**: Grab and rotate the diorama to inspect voxel details from any angle
+- **Auto-Cruise Mode**: Automatically transitions between stations every 20 seconds
+- **Manual Navigation**: Arrow buttons, keyboard arrows, or destination dots
+- **Cruise Toggle**: `停留此刻` pauses the journey; `继续漫游` resumes it
+- **Mouse / Touch Drag**: Grab and rotate the diorama to inspect details
+- **Soul Atlas**: Open `灵魂图鉴` to select any haven; camera motion and cruise progress pause while it is open
+- **Reduced Motion**: Respects the system preference by disabling auto-cruise and environmental animation by default
 
 ### 🌧️ Dynamic Climate Matrix
 Each station runs a **unique particle physics simulation**:
@@ -57,7 +70,7 @@ Each station runs a **unique particle physics simulation**:
 
 ### 💡 Living Light Systems
 - **Flickering Lanterns**: Candle/oil-lamp simulation using layered sine waves + random noise
-- **Neon Fault Algorithm** (USA): 4% probability burst flicker simulating aging transformer contacts
+- **Neon Breathing** (USA): A subtle, periodic dip rather than rapid random flashes
 - **Aurora Directional**: Green-tinted rim light casting across the black sand from celestial curtains
 - **Hearth Breathing** (Denmark): Multi-frequency intensity modulation mimicking fireplace ember pulse
 
@@ -69,18 +82,20 @@ Each station runs a **unique particle physics simulation**:
 
 ### 🕹️ Controls
 
-Zero learning curve — pure mouse interaction:
+Zero learning curve — mouse, touch, or keyboard:
 
 | Button | Function | Detail |
 |:---|:---|:---|
-| **◀ PREV** | Previous Station | Instant cut to the last retreat |
-| **CRUISE 🔄** | Toggle Auto-Pilot | Pause/resume the 10-second auto-transition |
-| **NEXT ▶** | Next Station | Advance to the next global sanctuary |
-| **Drag Canvas** | Manual Orbit | Click and drag to rotate the diorama manually |
+| **← / → buttons** | Previous / Next | Gentle scene reveal; wraps around all 12 havens |
+| **停留此刻 / 继续漫游** | Toggle Auto-Pilot | Pause/resume the 20-second auto-transition |
+| **灵魂图鉴** | Destination Atlas | Choose any haven; Escape closes the dialog |
+| **Drag Canvas** | Manual Orbit | Mouse or touch drag rotates the diorama |
+| **Keyboard ← / →** | Previous / Next | Available when no button or dialog has focus |
+| **Space / M** | Cruise / Atlas | Available when no button or dialog has focus |
 
 ### 💡 Viewing Tips
 1. **Let it cruise** first — the auto-transition is timed for meditative pacing
-2. **Pause on your favorite** — hit CRUISE to stop and absorb the atmosphere
+2. **Pause on your favorite** — hit `停留此刻` to absorb the atmosphere
 3. **Drag to inspect** — the voxel construction rewards close inspection (German timber framing, Thai chofa roofs, etc.)
 4. **Full-screen recommended** — the pixel-stretch effect is most immersive at maximum viewport
 
@@ -88,10 +103,11 @@ Zero learning curve — pure mouse interaction:
 
 ## 🛠️ Tech Stack
 
-- **Three.js r128**: WebGL rendering, procedural voxel geometry generation, shadow mapping
+- **Three.js r128**: WebGL rendering, instanced voxel details, PCF soft shadow mapping
 - **Orthographic Camera**: Classic isometric diorama perspective (no perspective distortion)
-- **Low-Resolution Pipeline**: Internal 400×300 render buffer + CSS `image-rendering: pixelated` stretch
-- **Procedural Materials**: All textures generated via `MeshLambertMaterial` with `flatShading: true` — zero external assets
+- **Low-Resolution Pipeline**: 480px internal height on desktop, 680px on portrait screens; width matches viewport aspect, with CSS `image-rendering: pixelated`
+- **Procedural Materials**: Flat-shaded Lambert voxels, Phong water, a generated glow texture, and a custom aurora ribbon shader — zero external art assets
+- **Color and Light**: Linearized material colors, sRGB output, ACES tone mapping, hemisphere fill and a warm key light
 - **Particle Physics Engine**: Per-station custom update loops (gravity, wind, buoyancy, lifecycle)
 - **Dynamic Lighting**: `AmbientLight` + `PointLight` + `DirectionalLight` with real-time intensity modulation
 - **Single-File Architecture**: Entire experience contained in one `index.html` — no build step, no dependencies beyond Three.js CDN
@@ -102,7 +118,7 @@ Zero learning curve — pure mouse interaction:
 
 ### Requirements
 - Modern browser with WebGL support (Chrome 90+ / Firefox 88+ / Edge 90+ / Safari 14+)
-- Any local HTTP server (CORS required for Three.js module loading from CDN)
+- Any local HTTP server, plus network access to the Three.js CDN
 
 ### Quick Start
 
@@ -120,7 +136,7 @@ npx http-server -p 8000
 open http://localhost:8000
 ```
 
-> **Note**: Opening `index.html` directly may trigger CORS errors with the Three.js CDN import. Use any local server.
+> **Note**: The classic script-tag version can also run from `file://` when CDN access is available. A local server is recommended for predictable browser behavior.
 
 ---
 
@@ -130,8 +146,9 @@ open http://localhost:8000
 soul-sanctuary/
 ├── index.html          # Complete self-contained application (CSS + JS + HTML)
 ├── README.md           # This file
+├── ART_DIRECTION.md    # Visual direction, reference principles and validation
 ├── LICENSE             # MIT License
-└── screenshots/        # Station preview images (optional)
+└── screenshots/        # Refreshed desktop, atlas and mobile previews
 ```
 
 > **Architecture**: Single-File Application. All 12 station builders, particle systems, lighting rigs, and UI controls are inlined. Deploy by copying one file to any static host.
@@ -159,13 +176,12 @@ torii.add(postL, postR, tie, topBar);
 
 ### 2. Hard-Pixel Render Pipeline
 ```javascript
-const RENDER_W = 400;
-const RENDER_H = 300;
-renderer.setSize(RENDER_W, RENDER_H, false); // Internal low-res
+const internalHeight = aspect < .8 ? 680 : 480;
+renderer.setSize(Math.round(internalHeight * aspect), internalHeight, false);
 // CSS scales to fullscreen with zero interpolation:
 // image-rendering: pixelated;
 ```
-This creates the signature **crisp voxel edge** aesthetic without post-processing shaders.
+This creates the signature **crisp voxel edge** aesthetic without a full-screen post-processing chain and without stretching the scene's aspect ratio.
 
 ### 3. Particle Physics Taxonomy
 Each station registers its particles with a typed behavior tag:
@@ -185,15 +201,17 @@ Each station registers its particles with a typed behavior tag:
 | `drift` | `+z sand flow`, `y abs-sine` | `z > 5` |
 | `float` | `+y levitation`, `wide xz orbit` | `y > 6` |
 
-### 4. Light Flicker Algorithms
+### 4. Motion and Resource Lifetime
+Particle movement uses frame delta rather than a fixed 60fps assumption. Shared detail batches use `InstancedMesh` for foliage, masonry, rock tiers and ripples. Scene changes dispose the complete geometry/material hierarchy and old shadow maps; the star field and generated glow texture remain shared.
+
+### 5. Light Flicker Algorithms
 ```javascript
 // Standard candle: layered sine + noise
 intensity = base + sin(elapsed * speed) * amp + cos(elapsed * speed * 1.5) * (amp * 0.5);
 
-// Neon fault (USA): probabilistic blackout burst
-if (Math.random() > 0.96) {
-    intensity = 0.2; // Transformer contact failure simulation
-    neonMats.forEach(m => m.color.setHex(darkened));
+// Neon breathing: occasional dimming without rapid flashes
+if (!reducedMotion.matches && Math.sin(elapsed * 1.6) > .99) {
+    intensity *= .7;
 }
 ```
 
@@ -201,7 +219,16 @@ if (Math.random() > 0.96) {
 
 ## 📝 Development Notes
 
-### v1.0 Current Release
+### Art Refresh
+- ✅ All 12 destinations receive new details and calibrated palettes
+- ✅ Tiered floating rock islands, natural foliage, garden and canal bridges
+- ✅ Hot-spring steam, koi, ripples and a custom aurora ribbon
+- ✅ Original SVG atlas emblems and bilingual poetic haven identities
+- ✅ Responsive portrait, landscape and widescreen compositions
+- ✅ Functional pointer/touch orbit, keyboard navigation and accessible atlas dialog
+- ✅ Reduced-motion preference and complete scene resource disposal
+
+### v1.0 Foundation
 - ✅ 12 fully realized voxel dioramas with culturally specific architecture
 - ✅ 12 independent particle physics systems
 - ✅ Auto-cruise with manual override
@@ -213,7 +240,7 @@ if (Math.random() > 0.96) {
 - 🔄 **Ambient Audio**: Procedural generative music per station (synth pads, rain noise, wind howl)
 - 🔄 **Day/Night Cycle**: Smooth time-of-day transitions within each station
 - 🔄 **Interactive Elements**: Clickable lanterns to toggle lights, clickable doors to "enter" buildings
-- 🔄 **Mobile Gestures**: Swipe to change station, pinch to zoom orthographic scale
+- 🔄 **Additional Mobile Gestures**: Pinch to zoom orthographic scale
 - 🔄 **VR Mode**: Stereo rendering for WebXR-compatible headsets
 - 🔄 **Seasonal Variants**: Winter/Summer versions of each station (snow vs. green foliage)
 
